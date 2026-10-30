@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="ka" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiffany Nail Bar Tbilisi | სილამაზის სალონი და ნეილ-ბარი</title>
+    <meta name="description" content="Tiffany Nail Bar - პრემიუმ ნეილ-ბარი თბილისში. 3 ფილიალი: გლდანი პლაზა, წერეთელი 41, ნავთლუღი 33. გზისპირიდან გატანა, აპარატული მანიკიური, პედიკიური და ნეილ-არტი. ტელ: 555 65 88 99.">
+    <meta name="keywords" content="Tiffany Nail Bar, მანიკიური თბილისი, პედიკიური, ფრჩხილების დაგრძელება, გლდანი პლაზა, წერეთელი, ნავთლუღი">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=FiraGO:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind CSS CDN with Custom Extended Theme -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tiffany: {
+                            50: '#F0FBFB',
+                            100: '#DDF7F6',
+                            200: '#B5EEEC',
+                            300: '#7CE0DC',
+                            400: '#3CCBC6',
+                            500: '#0ABAB5', // Iconic Tiffany Blue
+                            600: '#089B97',
+                            700: '#097B78',
+                            800: '#0C6260',
+                            900: '#0F514F',
+                        },
+                        pink: {
+                            pastel: '#FFF0F3',
+                            soft: '#FCE8EE',
+                            rose: '#FFAEBC',
+                            DEFAULT: '#FF7597',
+                            vibrant: '#FF4D79',
+                            deep: '#E03E6D',
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['"Cinzel"', '"Playfair Display"', 'serif'],
+                        sans: ['"FiraGO"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS (in css/ folder with CSS Specificity architecture) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#FAFEFD] text-slate-800 antialiased selection:bg-pink-rose selection:text-slate-900">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div id="top-announcement-bar" class="bg-gradient-to-r from-tiffany-500 via-pink-rose to-pink-500 text-white text-xs sm:text-sm py-2 px-4 shadow-sm text-center font-medium">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <span class="flex items-center gap-2 mx-auto sm:mx-0">
+                <span class="inline-block w-2 h-2 rounded-full bg-white animate-ping"></span>
+                <span>✨ <strong>Tiffany Nail Bar</strong> — 3 ფილიალი თბილისში • გზისპირიდან გატანა & ექსპრეს მომსახურება</span>
+            </span>
+            <div class="hidden sm:flex items-center gap-4 text-xs font-semibold mx-auto sm:mx-0">
+                <a href="tel:555658899" class="hover:underline flex items-center gap-1.5"><i class="fa-solid fa-phone"></i> 555 65 88 99</a>
+                <span class="opacity-60">•</span>
+                <a href="https://instagram.com/tiffany.nailbar.ge" target="_blank" rel="noopener noreferrer" class="hover:underline flex items-center gap-1.5"><i class="fa-brands fa-instagram"></i> 9.4K გამომწერი</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER / NAVIGATION -->
+    <header id="site-header" class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-tiffany-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#hero-section" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-tiffany-500 to-pink-400 flex items-center justify-center text-white shadow-md shadow-tiffany-500/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-gem text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="font-heading text-xl sm:text-2xl font-bold tracking-wider text-slate-800">
+                            TIFFANY <span class="text-tiffany-500">NAIL</span> <span class="text-pink-deep">BAR</span>
+                        </div>
+                        <p class="text-[10px] tracking-widest text-slate-500 uppercase font-semibold">Tbilisi • Beauty & Care</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+                    <a href="#hero-section" class="hover:text-tiffany-500 transition-colors">მთავარი</a>
+                    <a href="#branches" class="hover:text-tiffany-500 transition-colors">ფილიალები (3)</a>
+                    <a href="#services" class="hover:text-tiffany-500 transition-colors">სერვისები</a>
+                    <a href="#calculator" class="hover:text-tiffany-500 transition-colors">კალკულატორი</a>
+                    <a href="#curbside-pickup" class="hover:text-tiffany-500 transition-colors">გზისპირიდან გატანა</a>
+                    <a href="#gallery" class="hover:text-tiffany-500 transition-colors">ფოტოები</a>
+                    <a href="#contact" class="hover:text-tiffany-500 transition-colors">კონტაქტი</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="tel:555658899" class="text-slate-700 hover:text-pink-deep font-bold text-sm flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-pink-soft transition-all">
+                        <span class="w-8 h-8 rounded-full bg-pink-soft text-pink-deep flex items-center justify-center">
+                            <i class="fa-solid fa-phone text-xs"></i>
+                        </span>
+                        555 65 88 99
+                    </a>
+                    <button class="open-booking-modal btn-pink-gradient text-sm shadow-md cursor-pointer" id="header-cta-btn">
+                        <i class="fa-regular fa-calendar-check mr-1.5"></i> ჩაწერა
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-tiffany-50 focus:outline-none" aria-label="მენიუს გახსნა">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-tiffany-100 px-6 py-6 space-y-4 shadow-xl">
+            <div class="flex justify-between items-center pb-2 border-b border-gray-100">
+                <span class="font-heading font-bold text-tiffany-600">ნავიგაცია</span>
+                <button id="close-menu-btn" class="text-gray-400 hover:text-gray-600 text-lg">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-3 font-semibold text-slate-700">
+                <a href="#hero-section" class="py-1 hover:text-tiffany-500">მთავარი</a>
+                <a href="#branches" class="py-1 hover:text-tiffany-500">ფილიალები (3 ფილიალი)</a>
+                <a href="#services" class="py-1 hover:text-tiffany-500">სერვისები & ფასები</a>
+                <a href="#calculator" class="py-1 hover:text-tiffany-500">ფასის კალკულატორი</a>
+                <a href="#curbside-pickup" class="py-1 hover:text-tiffany-500">გზისპირიდან გატანა</a>
+                <a href="#gallery" class="py-1 hover:text-tiffany-500">გალერეა</a>
+                <a href="#contact" class="py-1 hover:text-tiffany-500">კონტაქტი</a>
+            </div>
+            <div class="pt-4 border-t border-gray-100 flex flex-col gap-3">
+                <a href="tel:555658899" class="btn-tiffany w-full text-center py-2.5">
+                    <i class="fa-solid fa-phone"></i> დარეკვა: 555 65 88 99
+                </a>
+                <button class="open-booking-modal btn-pink-gradient w-full text-center py-2.5">
+                    <i class="fa-regular fa-calendar-check"></i> ონლაინ ჩაწერა
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero-section" class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
+            <!-- Decorative Background Blobs -->
+            <div class="absolute top-10 left-1/4 w-96 h-96 bg-tiffany-200/30 rounded-full blur-3xl pointer-events-none -z-10 animate-float"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 bg-pink-rose/30 rounded-full blur-3xl pointer-events-none -z-10 animate-float-delayed"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                    
+                    <!-- Left Hero Content -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <!-- Badges -->
+                        <div class="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
+                            <span class="badge-curbside">
+                                🚗 გზისპირიდან გატანა & ექსპრეს მომსახურება
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-tiffany-50 text-tiffany-700 border border-tiffany-200">
+                                <i class="fa-solid fa-star text-amber-400"></i> 9.4K გამომწერი Facebook & IG
+                            </span>
+                        </div>
+
+                        <!-- Main Title -->
+                        <h1 class="text-4xl sm:text-5xl xl:text-6xl font-extrabold text-slate-900 leading-tight">
+                            თქვენი სილამაზის <br class="hidden sm:inline">
+                            იდეალური სივრცე: <br>
+                            <span class="bg-gradient-to-r from-tiffany-500 via-pink-vibrant to-pink-deep bg-clip-text text-transparent font-heading">
+                                Tiffany Nail Bar
+                            </span>
+                        </h1>
+
+                        <!-- Subtitle -->
+                        <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                            გამორჩეული ნეილ-ხელოვნება, 100% სტერილიზაციის სტანდარტი და პრემიუმ კომფორტი თბილისის 3 ცენტრალურ ლოკაციაზე. აირჩიეთ პროფესიონალები და ისიამოვნეთ უმაღლესი ხარისხით.
+                        </p>
+
+                        <!-- Key Highlights Icons -->
+                        <div class="grid grid-cols-3 gap-3 py-2 max-w-lg mx-auto lg:mx-0 text-left">
+                            <div class="p-3 rounded-xl bg-white/70 border border-tiffany-100 shadow-sm flex items-center gap-2.5">
+                                <span class="w-8 h-8 rounded-lg bg-tiffany-100 text-tiffany-600 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-shield-virus text-sm"></i>
+                                </span>
+                                <div>
+                                    <div class="text-xs font-bold text-slate-800">100% სტერილური</div>
+                                    <div class="text-[10px] text-slate-500">მედ. ავტოკლავი</div>
+                                </div>
+                            </div>
+                            <div class="p-3 rounded-xl bg-white/70 border border-pink-soft shadow-sm flex items-center gap-2.5">
+                                <span class="w-8 h-8 rounded-lg bg-pink-soft text-pink-deep flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-crown text-sm"></i>
+                                </span>
+                                <div>
+                                    <div class="text-xs font-bold text-slate-800">Top მასალები</div>
+                                    <div class="text-[10px] text-slate-500">Kodi, Luxio, OPI</div>
+                                </div>
+                            </div>
+                            <div class="p-3 rounded-xl bg-white/70 border border-tiffany-100 shadow-sm flex items-center gap-2.5">
+                                <span class="w-8 h-8 rounded-lg bg-tiffany-100 text-tiffany-600 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-location-dot text-sm"></i>
+                                </span>
+                                <div>
+                                    <div class="text-xs font-bold text-slate-800">3 ფილიალი</div>
+                                    <div class="text-[10px] text-slate-500">გლდანი, წერეთელი, ისანი</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hero CTA Buttons -->
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                            <button class="open-booking-modal btn-pink-gradient w-full sm:w-auto text-base px-8 py-4 shadow-lg shadow-pink-500/25">
+                                <i class="fa-solid fa-calendar-check text-lg mr-2"></i> ონლაინ ჩაწერა
+                            </button>
+                            <a href="#services" class="btn-outline-tiffany w-full sm:w-auto text-base text-center px-8 py-3.5">
+                                <i class="fa-solid fa-sparkles mr-2"></i> სერვისები & ფასები
+                            </a>
+                            <a href="tel:555658899" class="inline-flex items-center justify-center gap-2 text-slate-700 hover:text-pink-deep font-bold text-sm px-4 py-3 rounded-full hover:bg-pink-soft/50 transition-all">
+                                <i class="fa-solid fa-phone text-tiffany-500"></i> 555 65 88 99
+                            </a>
+                        </div>
+
+                        <!-- Branches quick badge pills -->
+                        <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-2 text-xs text-slate-500">
+                            <span class="font-bold text-slate-700">ლოკაციები:</span>
+                            <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200">📍 გლდანი პლაზა (ვეკუას 14)</span>
+                            <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200">📍 წერეთლის 41</span>
+                            <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200">📍 ნავთლუღის 33</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Hero Visual Collage -->
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative mx-auto max-w-md lg:max-w-none">
+                            
+                            <!-- Main Hero Image with Glass Card Border -->
+                            <div class="relative rounded-3xl p-3 bg-gradient-to-tr from-tiffany-400 via-pink-rose to-pink-400 shadow-2xl shadow-tiffany-500/20">
+                                <div class="overflow-hidden rounded-2xl bg-white aspect-[4/3] sm:aspect-[16/11]">
+                                    <img src="images/hero_nails.jpg" alt="Tiffany Nail Bar Manicure" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
+                                </div>
+                            </div>
+
+                            <!-- Floating Badge 1 (Top Left) -->
+                            <div class="absolute -top-5 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-xl border border-tiffany-100 flex items-center gap-3 animate-float">
+                                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-tiffany-500 to-tiffany-300 flex items-center justify-center text-white">
+                                    <i class="fa-solid fa-heart text-lg"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-bold text-slate-800">9,400+ გამომწერი</div>
+                                    <div class="text-[10px] text-pink-deep font-semibold">Facebook & Instagram</div>
+                                </div>
+                            </div>
+
+                            <!-- Floating Badge 2 (Bottom Right) -->
+                            <div class="absolute -bottom-6 -right-3 sm:-right-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-pink-rose/40 flex items-center gap-3 animate-float-delayed">
+                                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-pink-500 to-pink-rose flex items-center justify-center text-white">
+                                    <i class="fa-solid fa-car-side text-lg"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-bold text-slate-800">გზისპირიდან გატანა</div>
+                                    <div class="text-[10px] text-tiffany-600 font-semibold">ექსპრეს მომსახურება</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CSS SPECIFICITY ARCHITECTURE BANNER (Transparent & Educational) -->
+        <section class="bg-gradient-to-r from-tiffany-50 via-white to-pink-soft py-6 border-y border-tiffany-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <span class="w-10 h-10 rounded-xl bg-tiffany-500 text-white flex items-center justify-center font-bold text-sm shadow">
+                            CSS
+                        </span>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-900">Custom CSS Specificity & Tailwind ინტეგრაცია</h4>
+                            <p class="text-xs text-slate-600">სტილები დალაგებულია სპეციფიკურობის მკაცრი წესებით: Element (0,0,1) &rarr; Class (0,1,0) &rarr; Compound (0,2,0) &rarr; ID (1,0,0) &rarr; ID+Class (1,1,0).</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="px-2.5 py-1 rounded bg-white text-tiffany-700 text-xs font-mono font-semibold border border-tiffany-200">#id .class (1,1,0)</span>
+                        <span class="px-2.5 py-1 rounded bg-pink-soft text-pink-deep text-xs font-mono font-semibold border border-pink-200">style.css specificity</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BRANCHES SECTION (3 LOCATIONS) -->
+        <section id="branches" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span class="text-xs font-bold tracking-widest text-tiffany-600 uppercase bg-tiffany-50 px-3.5 py-1.5 rounded-full border border-tiffany-200">
+                        თბილისის ლოკაციები
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-heading">
+                        ჩვენი 3 პრემიუმ ფილიალი
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base">
+                        აირჩიეთ თქვენთვის ყველაზე მოსახერხებელი მისამართი და დაჯავშნეთ ვიზიტი უმარტივესად:
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Branch 1: Gldani Plaza -->
+                    <div class="glass-card branch-card p-6 flex flex-col justify-between border-2 border-transparent hover:border-tiffany-300">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-tiffany-100 text-tiffany-800 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-shop"></i> ფილიალი 1
+                                </span>
+                                <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full">
+                                    ● ღიაა 10:00 - 20:00
+                                </span>
+                            </div>
+                            
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 font-heading">გლდანი პლაზა</h3>
+                            <p class="text-sm text-slate-600 mb-4 flex items-start gap-2">
+                                <i class="fa-solid fa-location-dot text-tiffany-500 mt-1"></i>
+                                <span><strong>ილია ვეკუას 14</strong> (Gldani Plaza), თბილისი</span>
+                            </p>
+
+                            <div class="space-y-2 text-xs text-slate-500 bg-slate-50 p-3.5 rounded-xl mb-6">
+                                <div class="flex justify-between">
+                                    <span>სამუშაო საათები:</span>
+                                    <span class="font-semibold text-slate-700">10:00 - 20:00 (ყოველდღე)</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>პარკინგი:</span>
+                                    <span class="font-semibold text-slate-700">Gldani Plaza Parking</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>გზისპირიდან გატანა:</span>
+                                    <span class="font-semibold text-pink-deep">ხელმისაწვდომია ✓</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <button class="open-booking-modal btn-tiffany w-full text-sm" data-branch="გლდანი პლაზა (ვეკუას 14)">
+                                <i class="fa-regular fa-calendar-check mr-1"></i> ამ ფილიალში ჩაწერა
+                            </button>
+                            <a href="tel:555658899" class="block text-center text-xs text-slate-600 hover:text-pink-deep font-semibold py-1">
+                                <i class="fa-solid fa-phone mr-1 text-tiffany-500"></i> დარეკვა: 555 65 88 99
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Branch 2: Tsereteli 41 (Featured) -->
+                    <div class="glass-card branch-card branch-active p-6 flex flex-col justify-between relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-gradient-to-l from-pink-500 to-pink-vibrant text-white text-[10px] font-bold px-4 py-1 rounded-bl-xl shadow-sm">
+                            ცენტრალური ფილიალი
+                        </div>
+
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-pink-soft text-pink-deep flex items-center gap-1.5">
+                                    <i class="fa-solid fa-gem"></i> ფილიალი 2
+                                </span>
+                                <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full">
+                                    ● ღიაა 10:00 - 20:00
+                                </span>
+                            </div>
+
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 font-heading">წერეთლის გამზირი</h3>
+                            <p class="text-sm text-slate-600 mb-4 flex items-start gap-2">
+                                <i class="fa-solid fa-location-dot text-pink-deep mt-1"></i>
+                                <span><strong>აკაკი წერეთლის 41</strong>, თბილისი</span>
+                            </p>
+
+                            <div class="space-y-2 text-xs text-slate-500 bg-white p-3.5 rounded-xl border border-pink-100 mb-6 shadow-sm">
+                                <div class="flex justify-between">
+                                    <span>სამუშაო საათები:</span>
+                                    <span class="font-semibold text-slate-700">10:00 - 20:00 (ყოველდღე)</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>მეტროსთან:</span>
+                                    <span class="font-semibold text-slate-700">მ/ს წერეთელი (3 წუთი)</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>სპეციალური VIP ზონა:</span>
+                                    <span class="font-semibold text-pink-deep">დიახ ✓</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <button class="open-booking-modal btn-pink-gradient w-full text-sm" data-branch="წერეთელი 41">
+                                <i class="fa-regular fa-calendar-check mr-1"></i> ამ ფილიალში ჩაწერა
+                            </button>
+                            <a href="tel:555658899" class="block text-center text-xs text-slate-600 hover:text-pink-deep font-semibold py-1">
+                                <i class="fa-solid fa-phone mr-1 text-pink-deep"></i> დარეკვა: 555 65 88 99
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Branch 3: Navtlughi 33 -->
+                    <div class="glass-card branch-card p-6 flex flex-col justify-between border-2 border-transparent hover:border-tiffany-300">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-tiffany-100 text-tiffany-800 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-star"></i> ფილიალი 3
+                                </span>
+                                <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full">
+                                    ● ღიაა 10:00 - 20:00
+                                </span>
+                            </div>
+
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 font-heading">ნავთლუღის ქუჩა</h3>
+                            <p class="text-sm text-slate-600 mb-4 flex items-start gap-2">
+                                <i class="fa-solid fa-location-dot text-tiffany-500 mt-1"></i>
+                                <span><strong>ნავთლუღის 33</strong> (ისანი / სამგორი), თბილისი</span>
+                            </p>
+
+                            <div class="space-y-2 text-xs text-slate-500 bg-slate-50 p-3.5 rounded-xl mb-6">
+                                <div class="flex justify-between">
+                                    <span>სამუშაო საათები:</span>
+                                    <span class="font-semibold text-slate-700">10:00 - 20:00 (ყოველდღე)</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>ავტომობილის მისადგომი:</span>
+                                    <span class="font-semibold text-slate-700">მოსახერხებელი</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>გზისპირიდან გატანა:</span>
+                                    <span class="font-semibold text-pink-deep">ხელმისაწვდომია ✓</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <button class="open-booking-modal btn-tiffany w-full text-sm" data-branch="ნავთლუღის 33">
+                                <i class="fa-regular fa-calendar-check mr-1"></i> ამ ფილიალში ჩაწერა
+                            </button>
+                            <a href="tel:555658899" class="block text-center text-xs text-slate-600 hover:text-pink-deep font-semibold py-1">
+                                <i class="fa-solid fa-phone mr-1 text-tiffany-500"></i> დარეკვა: 555 65 88 99
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVICES & PRICE LIST SECTION -->
+        <section id="services" class="py-20 bg-gradient-to-b from-white via-tiffany-50/40 to-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span class="text-xs font-bold tracking-widest text-pink-deep uppercase bg-pink-soft px-3.5 py-1.5 rounded-full border border-pink-rose">
+                        პროფესიონალური მოვლა
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-heading">
+                        ჩვენი სერვისები და ფასები
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base">
+                        გამოიყენება მხოლოდ უმაღლესი ხარისხის ჰიპოალერგიული მასალები და ერთჯერადი / სტერილური იარაღები.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Service 1: Apparatus Manicure -->
+                    <div class="service-card featured-service glass-card p-6 bg-white flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-tiffany-100 text-tiffany-600 flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-hand-sparkles"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-1">აპარატული მანიკიური + გელ-ლაქი</h3>
+                            <p class="text-xs text-slate-500 mb-4">კუტიკულის უსაფრთხო დამუშავება, ფრჩხილის ფირფიტის გასწორება და გელ-ლაქის დაფარვა.</p>
+                            
+                            <div class="flex items-center gap-4 text-xs text-slate-500 mb-4 border-t border-slate-100 pt-3">
+                                <span><i class="fa-regular fa-clock text-tiffany-500"></i> ~60 წუთი</span>
+                                <span><i class="fa-solid fa-award text-pink-deep"></i> გარანტია 3 კვირა</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <div>
+                                <span class="text-xs text-slate-400">ღირებულება:</span>
+                                <div class="text-2xl font-black text-slate-900">40 ₾</div>
+                            </div>
+                            <button class="open-booking-modal btn-tiffany text-xs py-2 px-4">
+                                ჩაწერა
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Nail Extensions -->
+                    <div class="service-card glass-card p-6 bg-white flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-pink-soft text-pink-deep flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-1">ფრჩხილების დაგრძელება (გელი / პოლიგელი)</h3>
+                            <p class="text-xs text-slate-500 mb-4">ნებისმიერი სიგრძისა და ფორმის (ნუში, კვადრატი, სტილეტი) არქიტექტურული მოდელირება.</p>
+                            
+                            <div class="flex items-center gap-4 text-xs text-slate-500 mb-4 border-t border-slate-100 pt-3">
+                                <span><i class="fa-regular fa-clock text-pink-deep"></i> ~100 წუთი</span>
+                                <span><i class="fa-solid fa-gem text-tiffany-500"></i> პრემიუმ სიმტკიცე</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <div>
+                                <span class="text-xs text-slate-400">ღირებულება:</span>
+                                <div class="text-2xl font-black text-slate-900">70 ₾ -დან</div>
+                            </div>
+                            <button class="open-booking-modal btn-pink-gradient text-xs py-2 px-4">
+                                ჩაწერა
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Luxury Pedicure SPA -->
+                    <div class="service-card glass-card p-6 bg-white flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-tiffany-100 text-tiffany-600 flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-spa"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-1">სპა პედიკიური + გელ-ლაქი</h3>
+                            <p class="text-xs text-slate-500 mb-4">ფეხის აბაზანა ვარდის ფურცლებით, სკრაბი, ქუსლების დამუშავება, მსუბუქი მასაჟი და ლაქი.</p>
+                            
+                            <div class="flex items-center gap-4 text-xs text-slate-500 mb-4 border-t border-slate-100 pt-3">
+                                <span><i class="fa-regular fa-clock text-tiffany-500"></i> ~75 წუთი</span>
+                                <span><i class="fa-solid fa-water text-tiffany-500"></i> რელაქს თერაპია</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <div>
+                                <span class="text-xs text-slate-400">ღირებულება:</span>
+                                <div class="text-2xl font-black text-slate-900">55 ₾</div>
+                            </div>
+                            <button class="open-booking-modal btn-tiffany text-xs py-2 px-4">
+                                ჩაწერა
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: French & Designer Nail Art -->
+                    <div class="service-card glass-card p-6 bg-white flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-pink-soft text-pink-deep flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-1">ავტორული დიზაინი / ფრენჩი / ომბრე</h3>
+                            <p class="text-xs text-slate-500 mb-4">ტრენდული Tiffany Blue ფრენჩი, მარმარილოს ეფექტები, კრისტალები და ოქროსფერი ფოლგა.</p>
+                            
+                            <div class="flex items-center gap-4 text-xs text-slate-500 mb-4 border-t border-slate-100 pt-3">
+                                <span><i class="fa-regular fa-clock text-pink-deep"></i> +20 წუთი</span>
+                                <span><i class="fa-solid fa-paintbrush text-pink-deep"></i> უნიკალური ნამუშევარი</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <div>
+                                <span class="text-xs text-slate-400">ღირებულება:</span>
+                                <div class="text-2xl font-black text-slate-900">10-25 ₾</div>
+                            </div>
+                            <button class="open-booking-modal btn-pink-gradient text-xs py-2 px-4">
+                                ჩაწერა
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: Correction & Removal -->
+                    <div class="service-card glass-card p-6 bg-white flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-tiffany-100 text-tiffany-600 flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-rotate"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-1">კორექცია & უსაფრთხო მოხსნა</h3>
+                            <p class="text-xs text-slate-500 mb-4">დაგრძელებული ფრჩხილების კორექცია ან ძველი საფარის უსაფრთხო მოხსნა ფირფიტის დაუზიანებლად.</p>
+                            
+                            <div class="flex items-center gap-4 text-xs text-slate-500 mb-4 border-t border-slate-100 pt-3">
+                                <span><i class="fa-regular fa-clock text-tiffany-500"></i> ~50 წუთი</span>
+                                <span><i class="fa-solid fa-shield-halved text-tiffany-500"></i> ნაზი დამუშავება</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <div>
+                                <span class="text-xs text-slate-400">ღირებულება:</span>
+                                <div class="text-2xl font-black text-slate-900">15 - 50 ₾</div>
+                            </div>
+                            <button class="open-booking-modal btn-tiffany text-xs py-2 px-4">
+                                ჩაწერა
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: Express / Curbside VIP Care -->
+                    <div class="service-card glass-card p-6 bg-white flex flex-col justify-between border-2 border-pink-rose/50">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-pink-soft text-pink-deep flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-1">ექსპრეს მოვლა / გზისპირიდან</h3>
+                            <p class="text-xs text-slate-500 mb-4">სწრაფი ჰიგიენური მანიკიური დაკავებული ქალბატონებისთვის ან პროდუქტების სწრაფი მიწოდება ავტომობილთან.</p>
+                            
+                            <div class="flex items-center gap-4 text-xs text-slate-500 mb-4 border-t border-slate-100 pt-3">
+                                <span><i class="fa-regular fa-clock text-pink-deep"></i> ~30 წუთი</span>
+                                <span><i class="fa-solid fa-car text-tiffany-500"></i> ექსპრეს სერვისი</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <div>
+                                <span class="text-xs text-slate-400">ღირებულება:</span>
+                                <div class="text-2xl font-black text-slate-900">25 ₾ -დან</div>
+                            </div>
+                            <button class="open-booking-modal btn-pink-gradient text-xs py-2 px-4">
+                                ჩაწერა
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- INTERACTIVE PRICE & TIME CALCULATOR -->
+        <section id="calculator" class="py-20 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-tiffany-50 via-white to-pink-soft border border-tiffany-100 shadow-xl" id="price-calculator">
+                    
+                    <div class="text-center max-w-2xl mx-auto mb-10">
+                        <span class="text-xs font-bold tracking-widest text-tiffany-600 uppercase bg-white px-3.5 py-1.5 rounded-full border border-tiffany-200 shadow-sm">
+                            ინტერაქტიული ხელსაწყო
+                        </span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2 font-heading">
+                            გამოთვალეთ ვიზიტის ფასი და დრო
+                        </h2>
+                        <p class="text-slate-600 text-xs sm:text-sm mt-1">
+                            მონიშნეთ სასურველი პროცედურები და სისტემა დაუყოვნებლივ დაითვლის ჯამურ ღირებულებას.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        
+                        <!-- Checkbox 1 -->
+                        <label class="flex items-center gap-3 p-4 rounded-2xl bg-white border border-slate-200 hover:border-tiffany-400 cursor-pointer shadow-sm transition-all">
+                            <input type="checkbox" class="calculator-service w-5 h-5 rounded text-tiffany-500 focus:ring-tiffany-400" data-price="40" data-time="60" checked>
+                            <div class="flex-1">
+                                <div class="text-sm font-bold text-slate-800">აპარატული მანიკიური + გელ-ლაქი</div>
+                                <div class="text-xs text-slate-500">კუტიკულის მოწესრიგება + დაფარვა (60 წთ)</div>
+                            </div>
+                            <span class="font-extrabold text-tiffany-600 text-sm">40 ₾</span>
+                        </label>
+
+                        <!-- Checkbox 2 -->
+                        <label class="flex items-center gap-3 p-4 rounded-2xl bg-white border border-slate-200 hover:border-tiffany-400 cursor-pointer shadow-sm transition-all">
+                            <input type="checkbox" class="calculator-service w-5 h-5 rounded text-tiffany-500 focus:ring-tiffany-400" data-price="55" data-time="75">
+                            <div class="flex-1">
+                                <div class="text-sm font-bold text-slate-800">სპა პედიკიური + გელ-ლაქი</div>
+                                <div class="text-xs text-slate-500">აბაზანა, სკრაბი, ქუსლების მოვლა (75 წთ)</div>
+                            </div>
+                            <span class="font-extrabold text-tiffany-600 text-sm">55 ₾</span>
+                        </label>
+
+                        <!-- Checkbox 3 -->
+                        <label class="flex items-center gap-3 p-4 rounded-2xl bg-white border border-slate-200 hover:border-tiffany-400 cursor-pointer shadow-sm transition-all">
+                            <input type="checkbox" class="calculator-service w-5 h-5 rounded text-tiffany-500 focus:ring-tiffany-400" data-price="70" data-time="100">
+                            <div class="flex-1">
+                                <div class="text-sm font-bold text-slate-800">ფრჩხილების დაგრძელება</div>
+                                <div class="text-xs text-slate-500">გელი ან აკრილგელი ფორმებზე (100 წთ)</div>
+                            </div>
+                            <span class="font-extrabold text-tiffany-600 text-sm">70 ₾</span>
+                        </label>
+
+                        <!-- Checkbox 4 -->
+                        <label class="flex items-center gap-3 p-4 rounded-2xl bg-white border border-slate-200 hover:border-tiffany-400 cursor-pointer shadow-sm transition-all">
+                            <input type="checkbox" class="calculator-service w-5 h-5 rounded text-tiffany-500 focus:ring-tiffany-400" data-price="15" data-time="20">
+                            <div class="flex-1">
+                                <div class="text-sm font-bold text-slate-800">Tiffany ფრენჩი ან ნეილ-არტი</div>
+                                <div class="text-xs text-slate-500">ინდივიდუალური დიზაინი (20 წთ)</div>
+                            </div>
+                            <span class="font-extrabold text-tiffany-600 text-sm">15 ₾</span>
+                        </label>
+
+                        <!-- Checkbox 5 -->
+                        <label class="flex items-center gap-3 p-4 rounded-2xl bg-white border border-slate-200 hover:border-tiffany-400 cursor-pointer shadow-sm transition-all">
+                            <input type="checkbox" class="calculator-service w-5 h-5 rounded text-tiffany-500 focus:ring-tiffany-400" data-price="10" data-time="15">
+                            <div class="flex-1">
+                                <div class="text-sm font-bold text-slate-800">ძველი საფარის მოხსნა</div>
+                                <div class="text-xs text-slate-500">უსაფრთხო მოხსნა (15 წთ)</div>
+                            </div>
+                            <span class="font-extrabold text-tiffany-600 text-sm">10 ₾</span>
+                        </label>
+
+                        <!-- Checkbox 6 -->
+                        <label class="flex items-center gap-3 p-4 rounded-2xl bg-white border border-slate-200 hover:border-tiffany-400 cursor-pointer shadow-sm transition-all">
+                            <input type="checkbox" class="calculator-service w-5 h-5 rounded text-tiffany-500 focus:ring-tiffany-400" data-price="20" data-time="20">
+                            <div class="flex-1">
+                                <div class="text-sm font-bold text-slate-800">პარაფინოთერაპია ხელებისთვის</div>
+                                <div class="text-xs text-slate-500">ღრმა დატენიანება და კვება (20 წთ)</div>
+                            </div>
+                            <span class="font-extrabold text-tiffany-600 text-sm">20 ₾</span>
+                        </label>
+
+                    </div>
+
+                    <!-- Calculator Summary Display -->
+                    <div class="p-6 rounded-2xl bg-white border-2 border-tiffany-200 shadow-md flex flex-col sm:flex-row items-center justify-between gap-6">
+                        <div class="flex items-center gap-6 text-center sm:text-left">
+                            <div>
+                                <span class="text-xs text-slate-500 font-semibold block">სავარაუდო დრო:</span>
+                                <span id="calc-total-time" class="text-xl font-bold text-slate-800">~60 წთ</span>
+                            </div>
+                            <div class="h-10 w-px bg-slate-200"></div>
+                            <div>
+                                <span class="text-xs text-slate-500 font-semibold block">ჯამური საფასური:</span>
+                                <span id="calc-total-price" class="text-3xl font-black text-pink-deep">40 ₾</span>
+                            </div>
+                        </div>
+
+                        <button class="open-booking-modal btn-pink-gradient w-full sm:w-auto px-8 py-3.5 text-sm shadow-md">
+                            <i class="fa-solid fa-calendar-check mr-2"></i> ამ არჩევით ჩაწერა
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SPECIAL FEATURE: CURBSIDE PICKUP & EXPRESS -->
+        <section id="curbside-pickup" class="py-20 bg-gradient-to-r from-tiffany-500 via-tiffany-600 to-pink-deep text-white relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-7 space-y-6">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/20 backdrop-blur-md text-white border border-white/30">
+                            ექსკლუზიური კომფორტი
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight font-heading">
+                            გზისპირიდან გატანა & <br>ექსპრეს მომსახურება
+                        </h2>
+                        <p class="text-white/90 text-sm sm:text-base leading-relaxed">
+                            გეჩქარებათ? ისარგებლეთ Tiffany Nail Bar-ის სპეციალური სერვისით თბილისის ნებისმიერ ფილიალთან:
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-car text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-base">ავტომობილთან მიწოდება</h4>
+                                    <p class="text-xs text-white/80">პროფესიონალური მოვლის საშუალებების, სასაჩუქრე ვაუჩერებისა და კოსმეტიკის გატანა მანქანიდან ჩამოუსვლელად.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-clock-fast text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-base">წინასწარი მომზადება</h4>
+                                    <p class="text-xs text-white/80">დაგვირეკეთ ნომერზე 555 65 88 99 და თქვენი შეკვეთა მზად დაგხვდებათ დანიშნულ დროს.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-2">
+                            <a href="tel:555658899" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-white text-slate-900 font-bold hover:bg-pink-soft hover:text-pink-deep transition-all shadow-lg">
+                                <i class="fa-solid fa-phone text-pink-deep"></i> დარეკვა: 555 65 88 99
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5">
+                        <div class="rounded-3xl p-3 bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl">
+                            <img src="images/salon_interior.jpg" alt="Tiffany Salon Interior" class="rounded-2xl w-full h-80 object-cover">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PHOTO GALLERY (ფოტოები) -->
+        <section id="gallery" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                    <span class="text-xs font-bold tracking-widest text-tiffany-600 uppercase bg-tiffany-50 px-3.5 py-1.5 rounded-full border border-tiffany-200">
+                        ნამუშევრების პორტფოლიო
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-heading">
+                        ფოტოები და ინტერიერი
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base">
+                        დაათვალიერეთ ჩვენი ოსტატების ნამუშევრები და Tiffany Nail Bar-ის სიმყუდროვე:
+                    </p>
+                </div>
+
+                <!-- Gallery Category Tabs -->
+                <div class="flex flex-wrap items-center justify-center gap-2.5 mb-10">
+                    <button class="gallery-tab-btn px-5 py-2 rounded-full text-xs font-bold transition-all bg-tiffany-500 text-white shadow-md" data-filter="all">
+                        ყველა ფოტო
+                    </button>
+                    <button class="gallery-tab-btn px-5 py-2 rounded-full text-xs font-bold transition-all bg-white text-gray-600 hover:bg-tiffany-50 border border-slate-200" data-filter="manicure">
+                        მანიკიური & ნეილ-არტი
+                    </button>
+                    <button class="gallery-tab-btn px-5 py-2 rounded-full text-xs font-bold transition-all bg-white text-gray-600 hover:bg-tiffany-50 border border-slate-200" data-filter="pedicure">
+                        სპა პედიკიური
+                    </button>
+                    <button class="gallery-tab-btn px-5 py-2 rounded-full text-xs font-bold transition-all bg-white text-gray-600 hover:bg-tiffany-50 border border-slate-200" data-filter="interior">
+                        სალონის ინტერიერი
+                    </button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- Item 1: Hero Nails -->
+                    <div class="gallery-item img-zoom-container group relative rounded-2xl shadow-md overflow-hidden bg-slate-100 aspect-square" data-category="manicure">
+                        <img src="images/hero_nails.jpg" alt="Tiffany Blue Manicure" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end text-white">
+                            <span class="text-xs font-bold text-tiffany-300">Tiffany Classic & Gold</span>
+                            <p class="text-[11px] text-white/80">აკრილგელი და დიზაინი</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Nail Designs -->
+                    <div class="gallery-item img-zoom-container group relative rounded-2xl shadow-md overflow-hidden bg-slate-100 aspect-square" data-category="manicure">
+                        <img src="images/nail_designs.jpg" alt="Nail Art Showcase" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end text-white">
+                            <span class="text-xs font-bold text-pink-rose">ფრენჩი & კრისტალები</span>
+                            <p class="text-[11px] text-white/80">ტრენდული პასტელური ჩრდილები</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Pedicure Spa -->
+                    <div class="gallery-item img-zoom-container group relative rounded-2xl shadow-md overflow-hidden bg-slate-100 aspect-square" data-category="pedicure">
+                        <img src="images/pedicure_spa.jpg" alt="Pedicure Spa Bath" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end text-white">
+                            <span class="text-xs font-bold text-tiffany-300">სპა პედიკიური</span>
+                            <p class="text-[11px] text-white/80">ვარდის წყალი და რელაქსაცია</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Salon Interior -->
+                    <div class="gallery-item img-zoom-container group relative rounded-2xl shadow-md overflow-hidden bg-slate-100 aspect-square" data-category="interior">
+                        <img src="images/salon_interior.jpg" alt="Tiffany Salon Atmosphere" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end text-white">
+                            <span class="text-xs font-bold text-pink-rose">Tiffany Salon Atmosphere</span>
+                            <p class="text-[11px] text-white/80">პრემიუმ ინტერიერი თბილისში</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Instagram Feed Button -->
+                <div class="text-center mt-12">
+                    <a href="https://instagram.com/tiffany.nailbar.ge" target="_blank" rel="noopener noreferrer" class="btn-pink-gradient text-sm px-8 py-3.5">
+                        <i class="fa-brands fa-instagram text-base mr-2"></i> მეტი ფოტო Instagram-ზე (@tiffany.nailbar.ge)
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SOCIAL PROOF & REVIEWS -->
+        <section class="py-20 bg-gradient-to-b from-white via-pink-soft/30 to-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span class="text-xs font-bold tracking-widest text-pink-deep uppercase bg-pink-soft px-3.5 py-1.5 rounded-full border border-pink-rose">
+                        შეფასებები
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-heading">
+                        რას ამბობენ ჩვენი სტუმრები
+                    </h2>
+                    <p class="text-slate-600 text-sm">
+                        9,400-ზე მეტი გამომწერი და ათასობით ბედნიერი ღიმილი ყოველდღიურად
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Review 1 -->
+                    <div class="glass-card p-6 bg-white relative">
+                        <div class="flex text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-slate-700 italic mb-6">
+                            "გლდანი პლაზას ფილიალში ვიყავი და აღფრთოვანებული ვარ! სისუფთავე უმაღლეს დონეზეა, ხელსაწყოები ჩემს თვალწინ გაიხსნა სტერილური პაკეტიდან. გელ-ლაქი 4 კვირა იდეალურად მქონდა!"
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-tiffany-100 text-tiffany-600 flex items-center justify-center font-bold text-sm">
+                                ნბ
+                            </div>
+                            <div>
+                                <div class="text-sm font-bold text-slate-900">ნინო ბერიძე</div>
+                                <div class="text-xs text-slate-500">მუდმივი მომხმარებელი</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="glass-card p-6 bg-white relative">
+                        <div class="flex text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-slate-700 italic mb-6">
+                            "წერეთლის ფილიალში სპა პედიკიური იყო ნამდვილი ნეტარება! ულამაზესი გარემო, გემრიელი ყავა და უსაყვარლესი პერსონალი. Tiffany Nail Bar უკონკურენტოა თბილისში."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-pink-soft text-pink-deep flex items-center justify-center font-bold text-sm">
+                                მყ
+                            </div>
+                            <div>
+                                <div class="text-sm font-bold text-slate-900">მარიამ ყიფიანი</div>
+                                <div class="text-xs text-slate-500">წერეთლის ფილიალი</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="glass-card p-6 bg-white relative">
+                        <div class="flex text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-slate-700 italic mb-6">
+                            "ნავთლუღის ფილიალში გზისპირიდან გატანის სერვისით ვისარგებლე და საჩუქარი მოვამზადებინე მეგობრისთვის. ძალიან სწრაფი და ყურადღებიანი მომსახურებაა. გირჩევთ ყველას!"
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-tiffany-100 text-tiffany-600 flex items-center justify-center font-bold text-sm">
+                                თგ
+                            </div>
+                            <div>
+                                <div class="text-sm font-bold text-slate-900">თათია გელაშვილი</div>
+                                <div class="text-xs text-slate-500">ნავთლუღის ფილიალი</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT & LOCATION INFO -->
+        <section id="contact" class="py-20 bg-slate-900 text-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-6 space-y-6">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-tiffany-500/20 text-tiffany-400 border border-tiffany-500/30">
+                            დაგვიკავშირდით
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white">
+                            გელოდებით Tiffany Nail Bar-ში!
+                        </h2>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            ვიზიტის დასაჯავშნად ან დამატებითი ინფორმაციისთვის დაგვირეკეთ ნომერზე ან მოგვწერეთ სოციალურ ქსელებში:
+                        </p>
+
+                        <div class="space-y-4 pt-2">
+                            <!-- Phone -->
+                            <a href="tel:555658899" class="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-tiffany-400 transition-all group">
+                                <span class="w-12 h-12 rounded-xl bg-gradient-to-tr from-tiffany-500 to-tiffany-400 text-white flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-phone"></i>
+                                </span>
+                                <div>
+                                    <div class="text-xs text-slate-400">ერთიანი ცხელი ხაზი:</div>
+                                    <div class="text-xl font-bold text-white group-hover:text-tiffany-400 transition-colors">555 65 88 99</div>
+                                </div>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a href="https://instagram.com/tiffany.nailbar.ge" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-pink-500 transition-all group">
+                                <span class="w-12 h-12 rounded-xl bg-gradient-to-tr from-pink-500 to-pink-rose text-white flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </span>
+                                <div>
+                                    <div class="text-xs text-slate-400">Instagram გვერდი (9.4K):</div>
+                                    <div class="text-base font-bold text-white group-hover:text-pink-rose transition-colors">instagram.com/tiffany.nailbar.ge</div>
+                                </div>
+                            </a>
+
+                            <!-- Facebook -->
+                            <a href="https://www.facebook.com/tiffanynailbar.ge/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-blue-400 transition-all group">
+                                <span class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </span>
+                                <div>
+                                    <div class="text-xs text-slate-400">Facebook ოფიციალური გვერდი:</div>
+                                    <div class="text-base font-bold text-white group-hover:text-blue-300 transition-colors">facebook.com/tiffanynailbar.ge</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Branches Addresses Quick Card -->
+                    <div class="lg:col-span-6 bg-white/5 p-8 rounded-3xl border border-white/10 backdrop-blur-md space-y-6">
+                        <h3 class="text-xl font-bold text-white font-heading border-b border-white/10 pb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-map-location-dot text-tiffany-400"></i> ჩვენი ფილიალების მისამართები
+                        </h3>
+                        
+                        <div class="space-y-4 text-sm">
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+                                <div class="font-bold text-tiffany-300 text-base mb-1">📍 გლდანი პლაზა</div>
+                                <div class="text-slate-300 text-xs">ილია ვეკუას 14 (Gldani Plaza), თბილისი</div>
+                                <div class="text-slate-400 text-[11px] mt-1">სამუშაო საათები: 10:00 - 20:00</div>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+                                <div class="font-bold text-pink-rose text-base mb-1">📍 წერეთლის ფილიალი</div>
+                                <div class="text-slate-300 text-xs">აკაკი წერეთლის გამზ. 41, თბილისი</div>
+                                <div class="text-slate-400 text-[11px] mt-1">სამუშაო საათები: 10:00 - 20:00</div>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+                                <div class="font-bold text-tiffany-300 text-base mb-1">📍 ნავთლუღის ფილიალი</div>
+                                <div class="text-slate-300 text-xs">ნავთლუღის ქ. 33, თბილისი</div>
+                                <div class="text-slate-400 text-[11px] mt-1">სამუშაო საათები: 10:00 - 20:00</div>
+                            </div>
+                        </div>
+
+                        <button class="open-booking-modal btn-pink-gradient w-full py-4 text-sm font-bold shadow-lg">
+                            <i class="fa-solid fa-calendar-check mr-2"></i> ონლაინ ჯავშნის გახსნა
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-lg bg-tiffany-500 text-white flex items-center justify-center text-xs">
+                    <i class="fa-solid fa-gem"></i>
+                </span>
+                <span class="font-bold text-white">Tiffany Nail Bar Tbilisi</span>
+                <span>© 2026 ყველა უფლება დაცულია.</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span>სილამაზე, კოსმეტიკა და პირადი ჰიგიენა</span>
+                <span>•</span>
+                <a href="tel:555658899" class="hover:text-white transition-colors">555 65 88 99</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING CALL BUTTON (PULSING) -->
+    <a href="tel:555658899" class="floating-call-btn w-14 h-14 rounded-full bg-gradient-to-tr from-tiffany-500 to-tiffany-400 text-white flex items-center justify-center text-2xl shadow-xl hover:scale-110 transition-transform" title="დარეკვა: 555 65 88 99" aria-label="დარეკვა">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <!-- ONLINE BOOKING MODAL -->
+    <div id="booking-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4 overflow-y-auto">
+        <div class="modal-content relative w-full max-w-lg p-6 sm:p-8 bg-white my-8 shadow-2xl">
+            
+            <!-- Close Button -->
+            <button id="close-booking-modal" class="absolute top-5 right-5 text-slate-400 hover:text-slate-600 text-xl" aria-label="დახურვა">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Modal Header -->
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-pink-soft text-pink-deep flex items-center justify-center mx-auto mb-2 text-xl shadow-sm">
+                    <i class="fa-solid fa-calendar-heart"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-900 font-heading">ონლაინ ჩაწერა</h3>
+                <p class="text-xs text-slate-500">Tiffany Nail Bar • აირჩიეთ ფილიალი და დრო</p>
+            </div>
+
+            <!-- Booking Form -->
+            <form id="booking-form" class="space-y-4">
+                
+                <!-- Client Name -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1" for="modal-client-name">თქვენი სახელი და გვარი *</label>
+                    <input type="text" id="modal-client-name" required placeholder="მაგ: ანა მაისურაძე" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-tiffany-500 text-sm">
+                </div>
+
+                <!-- Phone -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1" for="modal-client-phone">ტელეფონის ნომერი *</label>
+                    <input type="tel" id="modal-client-phone" required placeholder="555 XX XX XX" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-tiffany-500 text-sm">
+                </div>
+
+                <!-- Branch Selection -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1" for="modal-branch-select">ფილიალი *</label>
+                    <select id="modal-branch-select" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-tiffany-500 text-sm bg-white">
+                        <option value="გლდანი პლაზა (ვეკუას 14)">გლდანი პლაზა (ილია ვეკუას 14)</option>
+                        <option value="წერეთელი 41" selected>წერეთლის გამზირი 41</option>
+                        <option value="ნავთლუღის 33">ნავთლუღის ქუჩა 33</option>
+                    </select>
+                </div>
+
+                <!-- Service Selection -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1" for="modal-service-select">სასურველი სერვისი *</label>
+                    <select id="modal-service-select" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-tiffany-500 text-sm bg-white">
+                        <option value="აპარატული მანიკიური + გელ-ლაქი (40 ₾)">აპარატული მანიკიური + გელ-ლაქი (40 ₾)</option>
+                        <option value="ფრჩხილების დაგრძელება (70 ₾-დან)">ფრჩხილების დაგრძელება (70 ₾-დან)</option>
+                        <option value="სპა პედიკიური + გელ-ლაქი (55 ₾)">სპა პედიკიური + გელ-ლაქი (55 ₾)</option>
+                        <option value="ექსპრეს მოვლა / გზისპირიდან">ექსპრეს მოვლა / გზისპირიდან</option>
+                        <option value="ავტორული დიზაინი / ფრენჩი">ავტორული დიზაინი / ფრენჩი</option>
+                    </select>
+                </div>
+
+                <!-- Date & Time Grid -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1" for="modal-date">თარიღი *</label>
+                        <input type="date" id="modal-date" required class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-tiffany-500 text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1" for="modal-time">დრო *</label>
+                        <select id="modal-time" required class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-tiffany-500 text-sm bg-white">
+                            <option value="10:00">10:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="19:00">19:00</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="pt-2">
+                    <button type="submit" class="btn-pink-gradient w-full py-3.5 text-sm font-bold shadow-lg shadow-pink-500/25">
+                        <i class="fa-solid fa-check mr-2"></i> ჩაწერის დადასტურება
+                    </button>
+                </div>
+
+                <div class="text-center text-[11px] text-slate-400">
+                    ჩაწერის შემდეგ ჩვენი ადმინისტრატორი დაგიკავშირდებათ ნომერზე 555 65 88 99
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="booking-success-toast" class="fixed bottom-6 left-6 z-50 max-w-sm p-4 rounded-2xl bg-slate-900 text-white shadow-2xl border border-tiffany-400 flex items-start gap-3 transform translate-y-24 opacity-0 pointer-events-none transition-all duration-500">
+        <span class="w-8 h-8 rounded-xl bg-tiffany-500 text-white flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-check"></i>
+        </span>
+        <div>
+            <div class="text-xs font-bold text-tiffany-300">წარმატებული მოთხოვნა!</div>
+            <div id="toast-message" class="text-xs text-slate-200 mt-0.5">თქვენი ჯავშანი წარმატებით გაიგზავნა.</div>
+        </div>
+    </div>
+
+    <!-- Application Script -->
+    <script src="js/app.js"></script>
+</body>
+</html>

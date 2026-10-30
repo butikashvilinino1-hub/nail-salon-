@@ -1,0 +1,365 @@
+/* ==========================================================================
+   TIFFANY NAIL BAR - OFFICIAL STYLESHEET
+   Brand Colors: Tiffany Blue (#0ABAB5) & Luxury Soft Pink (#FF85A1)
+   Architecture: Tailwind Integration + Custom CSS Specificity Rules
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. CSS VARIABLES (DESIGN TOKENS)
+   -------------------------------------------------------------------------- */
+:root {
+    /* Tiffany Blue Spectrum */
+    --tiffany-primary: #0ABAB5;
+    --tiffany-light: #70E4DE;
+    --tiffany-pale: #E6FAF9;
+    --tiffany-dark: #077B78;
+    --tiffany-shadow: rgba(10, 186, 181, 0.25);
+    
+    /* Blush & Rose Pink Spectrum */
+    --pink-primary: #FF7597;
+    --pink-soft: #FCE8EE;
+    --pink-deep: #E03E6D;
+    --pink-rose: #FFAEBC;
+    --pink-shadow: rgba(255, 117, 151, 0.25);
+
+    /* Gradients */
+    --gradient-brand: linear-gradient(135deg, #0ABAB5 0%, #FFAEBC 50%, #FF7597 100%);
+    --gradient-soft: linear-gradient(135deg, #E6FAF9 0%, #FCE8EE 100%);
+    --gradient-card: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(246, 253, 253, 0.9) 100%);
+
+    /* Surfaces & Glassmorphism */
+    --surface-glass: rgba(255, 255, 255, 0.85);
+    --border-glass: rgba(10, 186, 181, 0.2);
+    --border-pink-glass: rgba(255, 117, 151, 0.3);
+
+    /* Typography */
+    --font-heading: 'Cinzel', 'Playfair Display', serif;
+    --font-sans: 'FiraGO', 'Noto Sans Georgian', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* --------------------------------------------------------------------------
+   2. DEMONSTRATION & ARCHITECTURE OF CSS SPECIFICITY
+   In this stylesheet, rules are intentionally structured following the CSS
+   Specificity hierarchy to override default browser styles and utility classes:
+   
+   Specificity Hierarchy:
+   (0, 0, 1) Element Selector
+   (0, 1, 0) Class / Attribute / Pseudo-class Selector
+   (0, 2, 0) Chained Class / Compound Selector
+   (1, 0, 0) ID Selector
+   (1, 1, 0) ID + Class Selector (Very High Specificity)
+   -------------------------------------------------------------------------- */
+
+/* --- SPECIFICITY (0, 0, 1): BASE ELEMENT SELECTORS --- */
+body {
+    font-family: var(--font-sans);
+    background: #FAFEFD;
+    color: #2D3748;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5 {
+    letter-spacing: -0.02em;
+}
+
+a {
+    transition: all 0.3s ease;
+}
+
+/* --- SPECIFICITY (0, 1, 0): SINGLE CLASS SELECTORS --- */
+.tiffany-text {
+    color: var(--tiffany-primary);
+}
+
+.pink-text {
+    color: var(--pink-deep);
+}
+
+.tiffany-bg {
+    background-color: var(--tiffany-primary);
+}
+
+.pink-bg {
+    background-color: var(--pink-soft);
+}
+
+.glass-card {
+    background: var(--surface-glass);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--border-glass);
+    border-radius: 1.25rem;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--border-pink-glass);
+    box-shadow: 0 20px 35px -10px var(--pink-shadow), 0 10px 20px -10px var(--tiffany-shadow);
+}
+
+/* --- SPECIFICITY (0, 2, 0): COMPOUND CLASS SELECTORS (Overrides (0,1,0)) --- */
+/* Notice: Overrides general .glass-card with specific branch highlights */
+.glass-card.branch-active {
+    border: 2px solid var(--tiffany-primary);
+    background: linear-gradient(145deg, rgba(230, 250, 249, 0.95), rgba(255, 255, 255, 0.95));
+    box-shadow: 0 12px 30px var(--tiffany-shadow);
+}
+
+.service-card.featured-service {
+    position: relative;
+    border: 2px solid transparent;
+    background-image: linear-gradient(white, white), var(--gradient-brand);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.service-card.featured-service::after {
+    content: 'TOP CHOICE';
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: var(--gradient-brand);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 3px 12px;
+    border-radius: 9999px;
+    letter-spacing: 0.08em;
+    box-shadow: 0 4px 10px var(--pink-shadow);
+}
+
+/* --- SPECIFICITY (1, 0, 0): ID SELECTORS (Overrides Class Selectors) --- */
+/* An ID selector strictly controls key anchor sections and modals */
+#hero-section {
+    position: relative;
+    background: radial-gradient(circle at 10% 20%, rgba(112, 228, 222, 0.22) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(255, 174, 188, 0.25) 0%, transparent 45%),
+                #FFFFFF;
+}
+
+#booking-modal {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#booking-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* --- SPECIFICITY (1, 1, 0): ID + CLASS SELECTORS (Very High Priority) --- */
+/* Demonstrating deliberate CSS Specificity to override any third-party or Tailwind utilities */
+#site-header.scrolled {
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 10px 30px -10px rgba(10, 186, 181, 0.15);
+    border-bottom: 1px solid rgba(10, 186, 181, 0.15);
+}
+
+#booking-modal .modal-content {
+    background: #FFFFFF;
+    border: 2px solid rgba(10, 186, 181, 0.3);
+    border-radius: 1.5rem;
+    box-shadow: 0 25px 50px -12px rgba(10, 186, 181, 0.25), 0 0 0 1px rgba(255, 117, 151, 0.1);
+}
+
+#price-calculator .total-price-display {
+    background: var(--gradient-brand);
+    color: #FFFFFF;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px var(--pink-shadow);
+}
+
+/* --------------------------------------------------------------------------
+   3. LUXURY TIFFANY & PINK BUTTONS & MICRO-INTERACTIONS
+   -------------------------------------------------------------------------- */
+.btn-tiffany {
+    background: var(--tiffany-primary);
+    color: white;
+    font-weight: 600;
+    padding: 0.85rem 1.85rem;
+    border-radius: 9999px;
+    box-shadow: 0 8px 20px -4px var(--tiffany-shadow);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-tiffany:hover {
+    background: var(--tiffany-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px -3px var(--tiffany-shadow);
+}
+
+.btn-pink-gradient {
+    background: var(--gradient-brand);
+    color: white;
+    font-weight: 600;
+    padding: 0.85rem 1.85rem;
+    border-radius: 9999px;
+    box-shadow: 0 8px 20px -4px var(--pink-shadow);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-pink-gradient::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #FF7597 0%, #FFAEBC 50%, #0ABAB5 100%);
+    border-radius: 9999px;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    z-index: -1;
+}
+
+.btn-pink-gradient:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 14px 28px -4px var(--pink-shadow);
+}
+
+.btn-pink-gradient:hover::before {
+    opacity: 1;
+}
+
+.btn-outline-tiffany {
+    background: transparent;
+    color: var(--tiffany-primary);
+    border: 2px solid var(--tiffany-primary);
+    font-weight: 600;
+    padding: 0.75rem 1.75rem;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-tiffany:hover {
+    background: var(--tiffany-primary);
+    color: white;
+    box-shadow: 0 8px 20px -4px var(--tiffany-shadow);
+}
+
+/* --------------------------------------------------------------------------
+   4. GLOWING ACCENTS & BADGES
+   -------------------------------------------------------------------------- */
+.badge-curbside {
+    background: linear-gradient(90deg, #FCE8EE, #E6FAF9);
+    border: 1px solid rgba(255, 117, 151, 0.4);
+    color: #BE185D;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.35rem 0.9rem;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    box-shadow: 0 2px 8px rgba(255, 117, 151, 0.15);
+}
+
+.badge-curbside::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #0ABAB5;
+    box-shadow: 0 0 6px #0ABAB5;
+    animation: pulseGlow 2s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.35); opacity: 1; }
+}
+
+/* Floating animation */
+.animate-float {
+    animation: floatElement 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+    animation: floatElement 7s ease-in-out infinite 2s;
+}
+
+@keyframes floatElement {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* --------------------------------------------------------------------------
+   5. SPECIFICITY OVERLAY IN SERVICE CHECKBOXES & SELECTORS
+   -------------------------------------------------------------------------- */
+.service-check-box {
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.service-check-box input[type="checkbox"]:checked + div {
+    border-color: var(--pink-primary);
+    background-color: #FFF5F7;
+    box-shadow: 0 8px 16px -4px var(--pink-shadow);
+}
+
+/* Custom Scrollbar in Tiffany & Pink */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F3FAF9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #0ABAB5, #FFAEBC);
+    border-radius: 10px;
+    border: 2px solid #F3FAF9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #077B78, #FF7597);
+}
+
+/* Image Zoom Effect */
+.img-zoom-container {
+    overflow: hidden;
+    border-radius: 1.25rem;
+}
+
+.img-zoom-container img {
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.img-zoom-container:hover img {
+    transform: scale(1.06);
+}
+
+/* Floating Call Button */
+.floating-call-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 50;
+    box-shadow: 0 10px 25px rgba(10, 186, 181, 0.4);
+    animation: pulseRing 2.5s infinite;
+}
+
+@keyframes pulseRing {
+    0% {
+        box-shadow: 0 0 0 0 rgba(10, 186, 181, 0.5), 0 10px 25px rgba(10, 186, 181, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 18px rgba(10, 186, 181, 0), 0 10px 25px rgba(10, 186, 181, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(10, 186, 181, 0), 0 10px 25px rgba(10, 186, 181, 0.4);
+    }
+}
